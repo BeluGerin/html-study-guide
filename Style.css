@@ -1,0 +1,159 @@
+/* This changes the font for the entire webpage */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9; /* A very light gray background */
+            color: #001eff; /* Dark gray text is easier to read than pure black */
+            padding: 20px; /* Gives the whole page some breathing room */
+        }
+
+        /* This targets ONLY your h1 tags */
+        h1 {
+            color: #ff2d20; /* The signature Laravel red! */
+            text-align: center; /* Centers the text on the screen */
+        }
+
+        /* Give inputs and dropdowns some padding and rounded corners */
+        input, select {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px; /* Softens the sharp edges */
+            margin-bottom: 15px; /* Adds space below each box */
+            width: 100%; /* Makes them fill the available space */
+            max-width: 300px;
+        }
+
+        /* Make the submit button pop! */
+        .btn-primarty {
+            background-color: #ff2d20; /* Laravel Red */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Changes your mouse to a pointing hand when hovering */
+            font-weight: bold;
+        }
+
+        /* Add a hover effect for better UI/UX */
+        button:hover {
+            background-color: #cc2419; /* A slightly darker red when hovering */
+        }
+
+        /* Target the unique section using its ID (#) */
+        #skills-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        /* THE FLEXBOX MAGIC */
+        .flex-container {
+            display: flex; /* This tells the parent to line up its children */
+            gap: 20px; /* This automatically puts 20px of space between each card! */
+            justify-content: space-between; /* Spreads the cards out evenly */
+        }
+
+        /* 1. The Default State of the Card */
+        .skill-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #ff2d20; 
+            width: 30%; 
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            
+            /* ADD THIS LINE! This makes all hover effects smooth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        /* 2. The Hover State (What happens when the mouse touches it) */
+        .skill-card:hover {
+            /* translateY moves it UP by 10 pixels (negative goes up, positive goes down) */
+            transform: translateY(-10px); 
+            
+            /* We make the shadow bigger and darker to make it look like it's floating higher */
+            box-shadow: 0 15px 20px rgba(0,0,0,0.2); 
+        }
+
+        /* RESPONSIVE DESIGN FOR MOBILE SCREENS */
+        @media (max-width: 768px) {
+            
+            /* When the screen is 768px or smaller, change the flex-container rule! */
+            .flex-container {
+                flex-direction: column; /* This forces the flexbox to stack vertically instead of horizontally */
+            }
+
+            /* Make the cards take up the full width of the small screen */
+            .skill-card {
+                width: 100%; 
+            }
+        }
+
+        /* --- NAVIGATION BAR STYLES --- */
+
+        /* 1. Make the navbar a Flexbox so the Logo and the Links sit side-by-side */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Pushes logo left, links right */
+            align-items: center; /* Vertically centers them */
+            background-color: #333333; /* Dark background */
+            padding: 15px 30px;
+            color: white;
+        }
+
+        /* 2. Make the list of links a Flexbox too! */
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Space between each link */
+            list-style: none; /* Removes the ugly bullet points! */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 3. Style the actual clickable links */
+        .nav-links a {
+            color: white;
+            text-decoration: none; /* Removes the blue underline! */
+            font-weight: bold;
+            transition: color 0.3s ease; /* Makes the hover effect smooth */
+        }
+
+        /* 4. Add a hover effect */
+        .nav-links a:hover {
+            color: #ff2d20; /* Changes to Laravel Red when you hover */
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        background-color: #333333; 
+        padding: 15px 30px;
+        color: white;
+
+        /* ADD THESE THREE LINES: */
+        position: sticky; /* Tells the browser to stick it to the screen */
+        top: 0;           /* Tells it exactly where to stick (0 pixels from the top) */
+        z-index: 1000;    /* Ensures it stays ON TOP of everything else on the page */
+    }
+
+    /* --- ANIMATIONS --- */
+
+    /* 1. Define the movie (the keyframes) */
+    @keyframes fadeAndSlideDown {
+        from {
+            opacity: 0; /* Completely invisible */
+            transform: translateY(-20px); /* Starts 20 pixels higher up */
+        }
+        to {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Rests in its normal position */
+        }
+    }
+
+    .logo {
+    /* Tell the logo to play the animation we just made! */
+    /* It takes 1 second, eases out smoothly, and stays there (forwards) */
+    animation: fadeAndSlideDown 1s ease-out forwards; 
+    }

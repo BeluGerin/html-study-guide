@@ -1,0 +1,33 @@
+Think of HTML as speaking English, and CSS as speaking French. They have entirely different rules, grammar, and syntax.
+In an index.html file: The browser expects everything to be in HTML (English). If you want to suddenly start writing CSS (French) inside that file, the browser gets confused. You have to use the <style> tag as a translator box. It essentially says to the browser, "Hey, pause the HTML for a second. Everything inside this box is CSS."
+In a style.css file: The .css file extension at the end of the name is a global instruction to the browser and your code editor. It says, "Do not expect any HTML in here. This entire document is 100% CSS." ### 🛑 Why the Error Happened
+Because the .css file is strictly a "CSS-only zone," it doesn't know what angle brackets (< >) mean.
+When you put <style> inside a .css file, the browser tries to read it using CSS rules. It looks at the < symbol and thinks, "What is this? This isn't a selector! This isn't a property!" and it immediately throws a syntax error.
+In programming, keeping languages strictly in their own files (HTML in .html, CSS in .css, and later, JavaScript in .js) is called "Separation of Concerns." It keeps your code clean, fast, and easy to debug.
+
+Classes (.) vs. IDs (#)
+You already used a class earlier (.btn-primary), but what is the difference between a Class and an ID? It comes down to reusability.
+Think of it like being a university student:
+Class (.): This is like your major. Many people can be "Information Technology" students. In HTML, you can use the same Class on 50 different elements if you want them all to look the same.
+ID (#): This is like your Student ID Number. It is 100% unique to you. In HTML, an ID can only be used on one single element per page.
+
+When to use which?
+Use Classes for things that repeat (like buttons, cards, or identical columns).
+Use IDs for unique, one-of-a-kind sections (like #main-header, #contact-form, or #footer). IDs are also super useful later for JavaScript and for creating "jump links" that scroll the page to a specific section.
+
+The Two Rules of How This Worked:
+1. The Flexbox Rule (How it selected the 3 cards):
+When you tell a box to be display: flex;, it looks only at the items directly inside of it (its direct children). It grabs Child 1, Child 2, and Child 3 and shoves them into a row. It does not affect the <h2> above it, because the <h2> is not inside the <div class="flex-container">.
+
+2. The Class Rule (How the cards look identical):
+Notice how we wrote class="skill-card" on all three of the smaller boxes?
+Because they all share the exact same class name, our CSS file only needed one rule:
+.skill-card {
+    background-color: #f4f4f9;
+    border-top: 4px solid #ff2d20;
+}
+The browser reads that and says, "Okay, find every single thing on the page with the class skill-card and give it a gray background and a red line." It finds all three, and styles them all instantly!
+
+Right now, your Flexbox looks awesome on a laptop screen. But imagine someone viewing your portfolio on a narrow smartphone screen. If those three cards try to squeeze side-by-side on a tiny screen, the text will be squished and impossible to read.
+We fix this using something called a Media Query in CSS. It basically says: "If the screen shrinks below a certain size, change the rules!"
+Let's tell your Flexbox to switch from a horizontal row to a vertical stack if the screen gets smaller than a tablet.
