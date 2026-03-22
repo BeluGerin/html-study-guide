@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML Study Guide</title>
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    
     <header>
         <nav class="navbar">
             <h2 class="logo">Elvan's Portfolio</h2>
@@ -26,50 +26,73 @@
             </ul>
         </nav>
     </header>
-    <!-- heading -->
+
     <h1>smh</h1>
     <h2>smh</h2>
     <h3>smh</h3>
     <h4>smh</h4>
     <h5>smh</h5>
     <h6>smh</h6>
-    <!-- paragraph -->
+    
     <p>Paragraf</p>
-    <!-- Bold and Italic -->
+    
     <p>This is a <strong>very important</strong> paragraph, and learning HTML is <em>actually</em> pretty fun.</p>
-    <!-- Links -->
+    
     <a href="https://laravel.com">Check out Laravel's website</a>
-    <!-- Lists -->
+    
     <h3>My Tech Stack</h3>
-<ul>
-    <li>UI/UX Design</li>
-    <li>Laravel Development</li>
-    <li>HTML & CSS</li>
-</ul> 
-    <!-- Images -->
+    <ul>
+        <li>UI/UX Design</li>
+        <li>Laravel Development</li>
+        <li>HTML & CSS</li>
+    </ul> 
+    
     <img src="https://via.placeholder.com/200" alt="A gray placeholder square">
-    <!-- Forms -->
-    <h3>Contact Me</h3>
-    <form action="https://formspree.io/f/xreyvpep" method="POST">
-        <div>
-            <label for="userName">Name:</label>
-            <input type="text" id="userName" name="name" placeholder="Enter your name" required>
+
+    <section id="skills-section">
+        <h2>What I Do</h2>
+        <div class="flex-container">
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>Prototyping and designing user-friendly interfaces.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Laravel</h3>
+                <p>Building robust back-end systems and APIs.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Software Testing</h3>
+                <p>Ensuring quality through black-box and white-box testing.</p>
+            </div>
         </div>
 
-        <div>
-            <label for="userEmail">Email:</label>
-            <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
-        </div>
+        <h3>My Skills Matrix</h3>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th>Skill / Subject</th>
+                    <th>Proficiency Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laravel Development</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Software Testing (Black/White Box)</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Mandarin (Spoken & Written)</td>
+                    <td>Fluent</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <div>
-            <label for="userMessage">Message:</label>
-            <textarea id="userMessage" name="message" placeholder="Hello Elvan, I'd like to hire you!" rows="4" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; box-sizing: border-box;" required></textarea>
-        </div>
-
-        <div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </div>
-    </form>
     <section id="projects-section">
         <h2>Featured Projects</h2>
         <div class="flex-container">
@@ -92,70 +115,30 @@
 
         </div>
     </section>
-    <!-- CSS
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Study Guide</title> -->
 
-    <link rel="stylesheet" href="style.css">
-    <!-- Tables -->
-        <h3>My Skills Matrix</h3>
-    <table border="1"> <thead>
-            <tr>
-                <th>Skill / Subject</th>
-                <th>Proficiency Level</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Laravel Development</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>Software Testing (Black/White Box)</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>Mandarin (Spoken & Written)</td>
-                <td>Fluent</td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- Flexbox -->
-    <section id="skills-section">
-        <h2>What I Do</h2>
-        <div class="flex-container">
-            <div class="skill-card">
-                <h3>UI/UX Design</h3>
-                <p>Prototyping and designing user-friendly interfaces.</p>
+    <section id="contact-section">
+        <h3>Contact Me</h3>
+        <form action="https://formspree.io/f/xreyvpep" method="POST">
+            <div>
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="name" placeholder="Enter your name" required>
             </div>
 
-            <div class="skill-card">
-                <h3>Laravel</h3>
-                <p>Building robust back-end systems and APIs.</p>
+            <div>
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
             </div>
 
-            <div class="skill-card">
-                <h3>Software Testing</h3>
-                <p>Ensuring quality through black-box and white-box testing.</p>
+            <div>
+                <label for="userMessage">Message:</label>
+                <textarea id="userMessage" name="message" placeholder="Hello Elvan, I'd like to hire you!" rows="4" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; box-sizing: border-box;" required></textarea>
             </div>
-        </div>
+
+            <div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </div>
+        </form>
     </section>
-    <!-- JavaScript 
-    <script>
-            // 1. Tell JS to go find the button in your HTML
-            const submitButton = document.querySelector('.btn-primary');
 
-            // 2. Tell JS to "listen" for anyone clicking that button
-            submitButton.addEventListener('click', function(event) {
-                
-                // This stops the button from refreshing the whole page
-                event.preventDefault(); 
-                
-                // This triggers a browser popup!
-                alert('Hello Elvan! Your message was sent successfully.');
-                
-            });
-    </script> -->
-</body>
+    </body>
 </html>
