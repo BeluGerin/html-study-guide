@@ -157,3 +157,48 @@
     /* It takes 1 second, eases out smoothly, and stays there (forwards) */
     animation: fadeAndSlideDown 1s ease-out forwards; 
     }
+
+    /* --- UI/UX UPGRADES --- */
+
+    /* 1. Smoothly animate all changes on the button */
+    .btn-primary {
+        transition: all 0.3s ease; 
+        cursor: pointer;
+    }
+
+    /* 2. When the mouse hovers over the button: Lift it up and add a shadow */
+    .btn-primary:hover {
+        transform: translateY(-3px); 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    /* 3. Do the same floating effect for your Skill Cards! */
+    .skill-card {
+        transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Give the main sections plenty of space to breathe */
+    section, form, table {
+        margin-bottom: 60px; 
+    }
+
+    /* Make the form inputs look more modern and less cramped */
+    input, textarea {
+        padding: 12px 15px; /* Taller boxes are easier to click/tap! */
+        border-radius: 8px; /* Soften the harsh square corners */
+        border: 1px solid #ccc;
+        font-family: 'Poppins', sans-serif; /* Keep the font consistent */
+        transition: border-color 0.3s ease;
+    }
+
+    /* Make the input glow slightly when the user is typing in it */
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #007BFF; /* A nice modern blue */
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    }
