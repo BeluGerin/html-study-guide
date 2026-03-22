@@ -202,3 +202,7 @@
         border-color: #007BFF; /* A nice modern blue */
         box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
     }
+
+    html {
+    scroll-behavior: smooth;
+    }
