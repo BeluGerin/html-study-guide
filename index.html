@@ -13,6 +13,7 @@
 </head>
 <body>
     
+    <!-- THE HEADER (Top of the page) -->
     <header>
         <nav class="navbar">
             <h2 class="logo">Elvan's Portfolio</h2>
@@ -27,141 +28,156 @@
         </nav>
     </header>
 
-    <h1>smh</h1>
-    <h2>smh</h2>
-    <h3>smh</h3>
-    <h4>smh</h4>
-    <h5>smh</h5>
-    <h6>smh</h6>
-    
-    <p>Paragraf</p>
-    
-    <p>This is a <strong>very important</strong> paragraph, and learning HTML is <em>actually</em> pretty fun.</p>
-    
-    <a href="https://laravel.com">Check out Laravel's website</a>
-    
-    <h3>My Tech Stack</h3>
-    <ul>
-        <li>UI/UX Design</li>
-        <li>Laravel Development</li>
-        <li>HTML & CSS</li>
-    </ul> 
-    
-    <img src="https://via.placeholder.com/200" alt="A gray placeholder square">
+    <!-- MAIN CONTENT AREA -->
+    <main>
 
-    <section id="skills-section">
-        <h2>What I Do</h2>
-        <div class="flex-container">
-            <div class="skill-card">
-                <h3>UI/UX Design</h3>
-                <p>Prototyping and designing user-friendly interfaces.</p>
+        <!-- Intro / Study Guide -->
+        <h1>smh</h1>
+        <h2>smh</h2>
+        <h3>smh</h3>
+        <h4>smh</h4>
+        <h5>smh</h5>
+        <h6>smh</h6>
+        
+        <p>Paragraf</p>
+        
+        <p>This is a <strong>very important</strong> paragraph, and learning HTML is <em>actually</em> pretty fun.</p>
+        
+        <a href="https://laravel.com">Check out Laravel's website</a>
+        
+        <h3>My Tech Stack</h3>
+        <ul>
+            <li>UI/UX Design</li>
+            <li>Laravel Development</li>
+            <li>HTML & CSS</li>
+        </ul> 
+        
+        <img src="https://via.placeholder.com/200" alt="A gray placeholder square">
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+            <h2>What I Do</h2>
+            <div class="flex-container">
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Prototyping and designing user-friendly interfaces.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Laravel</h3>
+                    <p>Building robust back-end systems and APIs.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Software Testing</h3>
+                    <p>Ensuring quality through black-box and white-box testing.</p>
+                </div>
             </div>
 
-            <div class="skill-card">
-                <h3>Laravel</h3>
-                <p>Building robust back-end systems and APIs.</p>
+            <h3>My Skills Matrix</h3>
+            <table border="1"> 
+                <thead>
+                    <tr>
+                        <th>Skill / Subject</th>
+                        <th>Proficiency Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laravel Development</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Software Testing (Black/White Box)</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Mandarin (Spoken & Written)</td>
+                        <td>Fluent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="flex-container">
+                
+                <div class="skill-card">
+                    <h3>Smart Queue Application</h3>
+                    <p><strong>Role:</strong> UI/UX Designer</p>
+                    <p>Designed page-by-page wireframes, feature mapping, and user flows to streamline queue management systems.</p>
+                    <br>
+                    <a href="#" style="color: #007BFF; text-decoration: none; font-weight: 600;">View Details &rarr;</a>
+                </div>
+
+                <div class="skill-card">
+                    <h3>User Requirement Analysis</h3>
+                    <p><strong>Role:</strong> Software Engineering Researcher</p>
+                    <p>Conducting research on the gap between user needs and software implementation in Batam to improve local software solutions.</p>
+                    <br>
+                    <a href="#" style="color: #007BFF; text-decoration: none; font-weight: 600;">Read Proposal &rarr;</a>
+                </div>
+
             </div>
+        </section>
 
-            <div class="skill-card">
-                <h3>Software Testing</h3>
-                <p>Ensuring quality through black-box and white-box testing.</p>
-            </div>
-        </div>
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <h3>Contact Me</h3>
 
-        <h3>My Skills Matrix</h3>
-        <table border="1"> 
-            <thead>
-                <tr>
-                    <th>Skill / Subject</th>
-                    <th>Proficiency Level</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Laravel Development</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>Software Testing (Black/White Box)</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>Mandarin (Spoken & Written)</td>
-                    <td>Fluent</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+            <!-- The Google Maps iframe window -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255346.54911145658!2d103.88210335!3d1.0835158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98ebed1d36d23%3A0xc6bfed4079cb8e98!2sBatam%2C%20Batam%20City%2C%20Riau%20Islands!5e0!3m2!1sen!2sid!4v1700000000000" 
+                width="100%" 
+                height="300" 
+                style="border:0; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
 
-    <section id="projects-section">
-        <h2>Featured Projects</h2>
-        <div class="flex-container">
-            
-            <div class="skill-card">
-                <h3>Smart Queue Application</h3>
-                <p><strong>Role:</strong> UI/UX Designer</p>
-                <p>Designed page-by-page wireframes, feature mapping, and user flows to streamline queue management systems.</p>
-                <br>
-                <a href="#" style="color: #007BFF; text-decoration: none; font-weight: 600;">View Details &rarr;</a>
-            </div>
+            <form action="https://formspree.io/f/xreyvpep" method="POST">
+                <div>
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="name" placeholder="Enter your name" required>
+                </div>
 
-            <div class="skill-card">
-                <h3>User Requirement Analysis</h3>
-                <p><strong>Role:</strong> Software Engineering Researcher</p>
-                <p>Conducting research on the gap between user needs and software implementation in Batam to improve local software solutions.</p>
-                <br>
-                <a href="#" style="color: #007BFF; text-decoration: none; font-weight: 600;">Read Proposal &rarr;</a>
-            </div>
+                <div>
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
+                </div>
 
-        </div>
-    </section>
+                <!-- Dropdown Menu -->
+                <div>
+                    <label for="serviceType">What do you need help with?</label>
+                    <select id="serviceType" name="service" required style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif;">
+                        <option value="" disabled selected>Select a service...</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Web Development (Laravel)">Web Development (Laravel)</option>
+                        <option value="Software Testing">Software Testing</option>
+                        <option value="Other">Other / Just saying hi!</option>
+                    </select>
+                </div>
 
-<section id="contact-section">
-        <h3>Contact Me</h3>
+                <!-- Message Box -->
+                <div>
+                    <label for="userMessage">Message:</label>
+                    <textarea id="userMessage" name="message" placeholder="Hello Elvan, I'd like to hire you!" rows="4" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; box-sizing: border-box;" required></textarea>
+                </div>
 
-        <!-- Phase 2: The Google Maps iframe window! -->
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255346.54911145658!2d103.88210335!3d1.0835158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98ebed1d36d23%3A0xc6bfed4079cb8e98!2sBatam%2C%20Batam%20City%2C%20Riau%20Islands!5e0!3m2!1sen!2sid!4v1700000000000" 
-            width="100%" 
-            height="300" 
-            style="border:0; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+                <div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </div>
+            </form>
+        </section>
 
-        <form action="https://formspree.io/f/xreyvpep" method="POST">
-            <div>
-                <label for="userName">Name:</label>
-                <input type="text" id="userName" name="name" placeholder="Enter your name" required>
-            </div>
+    </main>
 
-            <div>
-                <label for="userEmail">Email:</label>
-                <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
-            </div>
+    <!-- FOOTER -->
+    <footer style="text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid #eee; color: #666; font-family: 'Poppins', sans-serif;">
+        <p>&copy; 2026 Elvan. Built from scratch with HTML & CSS.</p>
+    </footer>
 
-            <!-- The New Dropdown Menu! -->
-            <div>
-                <label for="serviceType">What do you need help with?</label>
-                <select id="serviceType" name="service" required style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif;">
-                    <option value="" disabled selected>Select a service...</option>
-                    <option value="UI/UX Design">UI/UX Design</option>
-                    <option value="Web Development (Laravel)">Web Development (Laravel)</option>
-                    <option value="Software Testing">Software Testing</option>
-                    <option value="Other">Other / Just saying hi!</option>
-                </select>
-            </div>
-
-            <!-- The Message Box you wanted to keep! -->
-            <div>
-                <label for="userMessage">Message:</label>
-                <textarea id="userMessage" name="message" placeholder="Hello Elvan, I'd like to hire you!" rows="4" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; box-sizing: border-box;" required></textarea>
-            </div>
-
-            <div>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </div>
-        </form>
-    </section>
 </body>
 </html>
