@@ -139,6 +139,26 @@
             </div>
         </form>
     </section>
+<div>
+                <label for="serviceType">What do you need help with?</label>
+                <select id="serviceType" name="service" required style="width: 100%; padding: 12px 15px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Poppins', sans-serif;">
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Web Development (Laravel)">Web Development (Laravel)</option>
+                    <option value="Software Testing">Software Testing</option>
+                    <option value="Other">Other / Just saying hi!</option>
+                </select>
+            </div>
 
+            <div>
+                <label for="userMessage">Message:</label>
+                <textarea id="userMessage" name="message" placeholder="Hello Elvan, I'd like to hire you!" rows="4" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; box-sizing: border-box;" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </div>
+        </form>
+    </section>
     </body>
 </html>
